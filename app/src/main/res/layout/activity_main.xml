@@ -1,29 +1,35 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".MainActivity"
-    >
+    tools:context=".MainActivity">
 
 
     <fragment
+        android:id="@+id/fragment_1"
+        android:name="com.example.myapp1.FragmentOne"
         android:layout_width="match_parent"
-        android:layout_height="1dp"
-        android:id="@+id/fragment1"
-        android:layout_weight="1"
-        android:name="com.example.myapp1.HeadFragment1" />
+        android:layout_height="2dp"
+        android:layout_weight="2"
+        />
 
 
     <fragment
+        android:id="@+id/fragment_2"
+        android:name="com.example.myapp1.FragmentOne"
         android:layout_width="match_parent"
-        android:layout_height="1dp"
-        android:id="@+id/fragment2"
-        android:layout_weight="1"
-        android:name="com.example.myapp1.HeadFragment1" />
+        android:layout_height="2dp"
+        android:layout_weight="2"
+        />
 
-
+    <fragment
+        android:id="@+id/fragment3"
+        android:name="com.example.myapp1.FragmentTwo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        />
 </LinearLayout>
